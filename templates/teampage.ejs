@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Misra Op Gaming | Shows all teams registered to play PUBG mobile customs." />
+    <meta property="og:site_name" content="Misra Op Gaming | Free and Paid Customs."/>
+    <meta property="og:image" content="/img/logo.jpeg" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.jpeg" type="image/icon type" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Team List | Misra Op Gaming</title>
+  </head>
+  <body style="background: #111827;">
+    <style>
+      .table{
+        margin:0;
+      }
+    </style>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="/">Misra Op Gaming</a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white hover:bg-blue-500" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white hover:bg-blue-500" href="/tournaments">Tournaments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white hover:bg-blue-500" href="/fungames">Fun Customs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white hover:bg-blue-500"  href="/contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown hover:bg-blue-500">
+                <button class="nav-link text-white hover:bg-blue-500" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Teamlist</button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="/teamlist/freeroom">Free T3 Room</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/teamlist/freetdm">Free TDM</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/teamlist/paidroom">Paid Room</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white hover:bg-blue-500"  href="/pointstable">Points Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main style="background: #111827;overflow-y: auto;">
+    <section class="text-gray-400 bg-gray-900 body-font relative">
+      <div class="container px-5 py-10 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Team List</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">'<%= name %>'  Registered Teamlist.</b></p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">If any wrong information about your team.Please report.</b></p>
+        </div>
+      </div>
+      <table class="table table-bordered text-white text-center" style="width:90%;margin:auto">
+        <thead>
+          <tr>
+            <th scope="col">Slot</th>
+            <th scope="col">Team Name</th>
+            <th scope="col">Players</th>
+            <th scope="col">IGL Name</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <img src="/img/logo.jpeg" style="border-radius:100px">
+          <span class="ml-3 text-xl">Misra Op Gaming</span>
+        </a>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Youtube</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="https://www.youtube.com/channel/UCG3iiKvrKe_9jiNhENGFvbw" class="text-gray-400 hover:text-white">Youtube Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Whatsapp Group</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="https://chat.whatsapp.com/HXPJnOowcZBHbqFQwwnjPy" class="text-gray-400 hover:text-white">Whatsapp Group Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Discord</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="https://discord.gg/BA4ZUETRAA" class="text-gray-400 hover:text-white">Discord Link</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-400 text-sm text-center sm:text-left">© 2021 Misra Op Gaming —
+          <a rel="noopener noreferrer" class="text-gray-500 ml-1" target="_blank">Subhajit Mishra</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    var ham = document.querySelector(".navbar-toggler")
+    ham.addEventListener("click", toggle)
+    function toggle(){
+      console.log(document.getElementById('navbarNavDropdown').classList.contains("show"))
+      if (document.getElementById('navbarNavDropdown').classList.contains("show")){
+        $( "#navbarNavDropdown" ).removeClass( "show" ).addClass( "hidden" )
+      }
+      else{
+        $( "#navbarNavDropdown" ).removeClass( "hidden" ).addClass( "show" )
+      }
+    }
+
+    function update(){
+      fetch('/getteam/<%= room %> ')
+      .then(response => response.json())
+      .then(data => teamList(data));
+    }
+
+    function teamList(docs) {
+      var str=''
+      for(var i=0; i < docs.length; i++) {
+         str = str + `<tr><th scope="row">${docs[i].slot}</th>
+<td>${docs[i].teamname}</td>
+<td><table class="table table-dark table-hover">
+<tr><td>${docs[i].player1ign}</td></tr>
+<tr><td>${docs[i].player2ign}</td></tr>
+<tr><td>${docs[i].player3ign}</td></tr>
+<tr><td>${docs[i].player4ign}</td></tr>
+</table></td>
+<td>${docs[i].player1ign}</td></tr>`
+      }
+       document.getElementById('tablebody').innerHTML=str;
+  }
+    update()
+
+    setInterval( update, 20000); 
+    </script>
+  </body>
+</html>
