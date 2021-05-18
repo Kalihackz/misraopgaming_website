@@ -39,5 +39,5 @@ Front-End | Back-End
 
 <img src="https://via.placeholder.com/1270x120/0d1117/BFFF00?text=SCREENSHOT+OF+THE+SCRIPT" />
 
-<!--![Screenshot Of LAN_Scanner Date: Sat March 02 09:13:25 PM](https://i.imgur.com/lQoTr5j.png)-->
+![Screenshot Of LAN_Scanner Date: Sat March 02 09:13:25 PM](https://i.imgur.com/O0mSncm.jpg)
 
