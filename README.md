@@ -8,7 +8,7 @@ India Tournaments.All player's team and points are displayed through this websit
 
 <img src="https://via.placeholder.com/1270x120/0d1117/BFFF00?text=DOMAIN+%26+IP+INFO" />
 
-`Link : Website Closed 
+`Link : Website Closed`
 
 ` Hosted on glitch` 
 ` PORT : 3000 ` => `[Actually port 80 is portforwarded to port 3000 ]` 
